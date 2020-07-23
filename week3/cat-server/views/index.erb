@@ -1,0 +1,11 @@
+<h1> My name is <%= @names %></h1>
+<% if @names.nil? %>
+<form action="/named-cat" method="post">
+  <label for="name">Name:</label>
+  <input type="text" name="name">
+  <input type="submit" value="Submit">
+</form>
+<% end %>
+<div style="border: 2px dotted red">
+  <img src="http://bit.ly/1eze8aE">
+</div>

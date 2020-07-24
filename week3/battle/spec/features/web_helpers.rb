@@ -5,3 +5,8 @@ def sign_in_and_play
   click_button('Submit')
   expect(page).to have_content('Vicky vs. Lewis')
 end
+
+def attack_and_confirm
+  click_link('Attack!')
+  click_button('OK')
+end
